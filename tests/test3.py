@@ -1,4 +1,4 @@
-# install get window
+# install get window, another way of getting window
 import time
 import pygetwindow as gw
 from pywinauto import Desktop

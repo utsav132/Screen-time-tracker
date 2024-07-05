@@ -18,9 +18,11 @@ def is_on_desktop():
 def log_event(event_type,date):
     current_time = datetime.now()
     current_time = current_time.strftime('%H:%M:%S')
-    
+    month = date.strftime("%B")
+    year = date.year
+    #path = f"Data\\{year}-{month}\\{date}.txt"
     path = f"Data\\{date}.txt"
-    with open(path, "a",encoding="utf-8") as log_file:
+    with open(path, "a") as log_file:
         log_file.write(f"{current_time} -> {event_type}\n")
 
 
