@@ -1,0 +1,1 @@
+Your activity will be stored in this folder.
